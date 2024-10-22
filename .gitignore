@@ -1,0 +1,17 @@
+# R specific
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.DS_Store
+.Rapp.history
+.RDataTmp
+.Rproj.user/
+*-Ex.R
+
+# Shiny token
+.httr-oauth
+
+# Project specific
+results/*
