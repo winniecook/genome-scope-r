@@ -82,8 +82,8 @@ BiocManager::install(c("Biostrings", "GenomicRanges", "seqinr"))
 ### Running the Application
 ```bash
 # Clone the repository
-git clone https://github.com/[YOUR_USERNAME]/dna-analyser-r-shiny.git
-cd dna-analyser-r-shiny
+git clone https://github.com/winniecook/genome-scope-r.git
+cd genome-scope-r
 
 # Open R/RStudio and run
 shiny::runApp()
