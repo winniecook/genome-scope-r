@@ -16,14 +16,14 @@ source("R/visualization_helpers.R")
 
 # UI Definition
 ui <- dashboardPage(
-  dashboardHeader(title = "Advanced DNA Analyzer"),
+  dashboardHeader(title = "🧬 GenomeScope"),    
   
-  dashboardSidebar(
+  dashboardSidebar(                             
     sidebarMenu(
       menuItem("Input", tabName = "input", icon = icon("dna")),
       menuItem("Basic Analysis", tabName = "basic", icon = icon("chart-bar")),
       menuItem("Advanced Analysis", tabName = "advanced", icon = icon("microscope")),
-      menuItem("Structure", tabName = "structure", icon = icon("cube")),
+      menuItem("Structural Analysis", tabName = "structure", icon = icon("cube")),
       menuItem("About", tabName = "about", icon = icon("info-circle"))
     )
   ),
