@@ -58,7 +58,7 @@ BiocManager::install(c("Biostrings", "GenomicRanges"))
 ### Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/dna-analyzer-r-shiny.git
+git clone https://github.com/winniecook/dna-analyzer-r-shiny.git
 cd dna-analyzer-r-shiny
 ```
 
