@@ -1,115 +1,127 @@
-# DNA Sequence Analyzer - R Shiny App
+# GenomeScope - DNA Sequence Analyzer
 
-## Overview
-An advanced DNA sequence analysis tool built with R Shiny, providing interactive visualization and comprehensive analysis of DNA sequences. This application offers both basic and advanced DNA sequence analysis features through an intuitive web interface.
-RShiny version of my previous dna sequence analyser app built in python/javascript
+A comprehensive web-based tool for DNA sequence analysis built with R Shiny. GenomeScope provides researchers and students with an intuitive interface for analyzing nucleotide sequences, calculating molecular properties, and visualizing genomic data.
 
 ## Features
 
-### Basic Analysis
-- Nucleotide frequency analysis with interactive visualization
-- GC content calculation and pie chart visualization
-- Codon usage statistics and distribution
-- Basic sequence statistics
+**Core Analysis**
+- Nucleotide composition and frequency analysis
+- GC content calculation with visual representation
+- Melting temperature prediction
+- Sequence validation and error checking
+- Complementary sequence generation
 
-### Advanced Analysis
-- Nucleotide distribution across sequence
-- GC skew analysis
-- Sequence complexity analysis
+**Advanced Analysis**
+- GC skew analysis across sequence regions
+- Sequence complexity calculations
 - Pattern recognition and repeat identification
+- Codon usage statistics
+- Secondary structure predictions
 
-### Structural Analysis
-- Interactive 3D DNA structure visualization
-- Circular DNA visualization
-- DNA property analysis including:
-  - Melting temperature
-  - Flexibility
-  - GC content distribution
-  - Molecular properties
+**Visualizations**
+- Interactive nucleotide frequency charts
+- 3D DNA structure modeling
+- Circular genome representations
+- Property distribution heatmaps
+- Statistical summary tables
+
+## Screenshots
+
+### Main Dashboard
+![Dashboard Overview](screenshots/Dashboard%20About%20Page.png)
+
+### Sequence Input Interface
+![Sequence Input](screenshots/Sequence%20Input%20&%20Validation.png)
+
+### Basic Analysis Results
+![Nucleotide Analysis](screenshots/Nucleotide%20Composition%20Analysis.png)
+
+### Detailed Composition Analysis
+![Detailed Analysis](screenshots/Nucleotide%20Composition%20Analysis%202.png)
+
+### Advanced Analysis Tools
+![Advanced Analysis](screenshots/Advanced%20Analysis%20.png)
+
+### 3D Structure Visualization
+![3D Structure](screenshots/3D%20Structure%20Analysis.png)
+
+### Statistical Reports
+![Statistics](screenshots/Detailed%20Statistics%20&%20Reports.png)
 
 ## Installation
 
 ### Prerequisites
-- R (>= 4.0.0)
-- RStudio (recommended for development)
+- R (version 4.0 or higher)
+- RStudio (recommended)
 
-### Required R Packages
-```R
-# Install required CRAN packages
+### Required Packages
+```r
+# Install CRAN packages
 install.packages(c(
-    "shiny",
-    "shinydashboard",
-    "stringr",
-    "ggplot2",
-    "plotly",
-    "DT",
-    "tidyr",
-    "dplyr",
-    "viridis",
-    "markdown"
+    "shiny", "shinydashboard", "stringr", "ggplot2", 
+    "plotly", "DT", "tidyr", "dplyr", "viridis"
 ))
 
 # Install Bioconductor packages
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install(c("Biostrings", "GenomicRanges"))
+
+BiocManager::install(c("Biostrings", "GenomicRanges", "seqinr"))
 ```
 
-### Setup
-1. Clone the repository:
+### Running the Application
 ```bash
-git clone https://github.com/winniecook/dna-analyzer-r-shiny.git
-cd dna-analyzer-r-shiny
-```
+# Clone the repository
+git clone https://github.com/[YOUR_USERNAME]/dna-analyser-r-shiny.git
+cd dna-analyser-r-shiny
 
-2. Open RStudio and set the working directory to the project folder
-
-3. Run the application:
-```R
+# Open R/RStudio and run
 shiny::runApp()
 ```
 
 ## Usage
 
-1. Input Tab:
-   - Enter or paste your DNA sequence
-   - Use the "Load Example" button for a sample sequence
-   - Click "Analyze" to process the sequence
+1. **Input**: Enter or paste DNA sequences in the input field
+2. **Validate**: The system automatically validates sequence format
+3. **Analyze**: Click the analyze button to process the sequence
+4. **Explore**: Navigate through different analysis tabs to view results
+5. **Export**: Download charts and statistical reports
 
-2. Basic Analysis Tab:
-   - View nucleotide frequencies
-   - Examine GC content distribution
-   - Analyze codon usage patterns
+## Technical Details
 
-3. Advanced Analysis Tab:
-   - Explore nucleotide distribution patterns
-   - Analyze GC skew
-   - Investigate sequence complexity
+**Built With**
+- R Shiny for the web interface
+- Biostrings for sequence manipulation
+- ggplot2 and Plotly for visualizations
+- DT for interactive data tables
 
-4. Structure Tab:
-   - Interact with 3D DNA structure
-   - View circular DNA representation
-   - Examine DNA physical properties
+**Analysis Methods**
+- Sliding window analysis for regional properties
+- Nearest-neighbor calculations for melting temperature
+- Pattern matching algorithms for repeat detection
+- Statistical methods for sequence complexity
 
 ## Project Structure
 ```
-dna-analyzer-r-shiny/
+dna-analyser-r-shiny/
+├── app.R                           # Main application file
 ├── R/
-│   ├── dna_functions.R      # Core analysis functions
-│   └── visualization_helpers.R  # Visualization functions
+│   ├── dna_functions.R            # Core analysis functions
+│   └── visualization_helpers.R    # Plotting utilities
 ├── www/
-│   └── about.md            # About page content
-├── app.R                   # Main application file
-└── README.md              # Project documentation
+│   └── about.md                   # Documentation
+├── tests/
+│   └── testthat/                  # Unit tests
+└── screenshots/                   # Application screenshots
 ```
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Contributions are welcome. Please feel free to submit issues or pull requests to improve the functionality or fix bugs.
 
-## Acknowledgments
-- Built with R Shiny framework
-- Uses Biostrings for DNA sequence analysis
-- Visualization powered by ggplot2 and plotly
+
+## Contact
+
+**Developer**: Winnie Cook
+**Email**: winniecook19@gmail.com 
+**GitHub**: [@winniecook](https://github.com/winniecook)
