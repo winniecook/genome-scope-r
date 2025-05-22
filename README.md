@@ -4,13 +4,6 @@ A comprehensive web-based tool for DNA sequence analysis built with R Shiny. Gen
 
 ## Features
 
-Sequence Analysis: Nucleotide composition, GC content, melting temperature
-Pattern Recognition: Repeat identification and codon usage statistics
-Interactive Visualizations: 3D structure modeling, frequency charts, heatmaps
-Data Export: Statistical reports and high-quality plots
-
-## Screenshots
-
 ### Main Dashboard
 Main dashboard interface featuring intuitive navigation and modern design
 
