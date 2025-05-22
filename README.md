@@ -29,29 +29,33 @@ A comprehensive web-based tool for DNA sequence analysis built with R Shiny. Gen
 
 ### Main Dashboard
 Main dashboard interface featuring intuitive navigation and modern design
+
 ![Dashboard Overview](screenshots/Dashboard%20About%20Page.png)
 
 ### Sequence Input Interface
 User-friendly sequence input with validation and example loading
+
 ![Sequence Input](screenshots/Sequence%20Input%20&%20Validation.png)
 
-### Basic Analysis Results
-Comprehensive nucleotide composition analysis with interactive visualizations
-![Nucleotide Analysis](screenshots/Nucleotide%20Composition%20Analysis.png)
-
 ### Detailed Composition Analysis
+Comprehensive nucleotide composition analysis with interactive visualizations
+
 ![Detailed Analysis](screenshots/Nucleotide%20Composition%20Analysis%202.png)
+![Nucleotide Analysis](screenshots/Nucleotide%20Composition%20Analysis.png)
 
 ### Advanced Analysis Tools
 Advanced sequence analysis including GC skew, complexity patterns, and distribution plots
+
 ![Advanced Analysis](screenshots/Advanced%20Analysis%20.png)
 
 ### 3D Structure Visualization
 Interactive 3D DNA double helix visualization with customizable viewing angles
+
 ![3D Structure](screenshots/3D%20Structure%20Analysis.png)
 
 ### Statistical Reports
 Detailed sequence statistics, pattern recognition, and molecular properties
+
 ![Statistics](screenshots/Detailed%20Statistics%20&%20Reports.png)
 
 ## Installation
